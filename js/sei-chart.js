@@ -26,7 +26,8 @@
     aSources: {},
     aUsages: {},
     bTypes: {},
-    cTypes: {}
+    cTypes: {},
+    keepAllVisible: false
   };
 
   function initState() {
@@ -99,14 +100,16 @@
     Object.keys(groups).forEach(function (key) {
       var g = groups[key];
       var d = g.sample;
-      if (!passesStrategyFilter(d)) return;
+      var passes = passesStrategyFilter(d);
+      if (!state.keepAllVisible && !passes) return;
       result.push({
         key: key,
         A_datasource: d.A_datasource,
         A_datausage: d.A_datausage,
         B_pretrainingtype: d.B_pretrainingtype,
         C_mixingtype: d.C_mixingtype,
-        sei: g.sum / g.count
+        sei: g.sum / g.count,
+        highlighted: passes
       });
     });
 
@@ -178,6 +181,25 @@
     // Section 2: Algorithm Strategy
     var sec2 = el('div', 'sei-controls-section');
     sec2.appendChild(sectionTitle('Algorithm Strategy'));
+
+    var toggleRow = el('div', 'sei-toggle-row');
+    var toggleLabel = el('label', 'sei-toggle-label');
+    toggleLabel.textContent = 'Keep all visible';
+    var toggleSwitch = el('label', 'sei-toggle-switch');
+    var toggleInput = document.createElement('input');
+    toggleInput.type = 'checkbox';
+    toggleInput.checked = state.keepAllVisible;
+    toggleInput.addEventListener('change', function () {
+      state.keepAllVisible = this.checked;
+      renderControls();
+      updateChart();
+    });
+    var toggleSlider = el('span', 'sei-toggle-slider');
+    toggleSwitch.appendChild(toggleInput);
+    toggleSwitch.appendChild(toggleSlider);
+    toggleRow.appendChild(toggleLabel);
+    toggleRow.appendChild(toggleSwitch);
+    sec2.appendChild(toggleRow);
 
     var grid2 = el('div', 'sei-strategy-grid');
 
@@ -285,9 +307,13 @@
   }
 
   // ── D3 chart ───────────────────────────────────────────────────
-  var margin = { top: 30, right: 55, bottom: 40, left: 220 };
-  var bandHeight = 26;
+  // Left margin reserved for strategy text labels.
+  var margin = { top: 30, right: 55, bottom: 40, left: 245 };
+  // Visual thickness of each horizontal bar row (also drives chart height).
+  var bandHeight = 16;
   var bandPad = 0.25;
+  // Extra whitespace between the label divider line (x=0) and the plot area.
+  var plotLeftPad = 45;
   var svgSel, gSel, xScale, yScale, xAxisG, yAxisG, zeroLineG;
 
   function initChart() {
@@ -323,7 +349,7 @@
       .attr('preserveAspectRatio', 'xMidYMin meet')
       .style('height', totalH + 'px');
 
-    xScale.range([0, innerW]);
+    xScale.range([plotLeftPad, innerW]);
     yScale.domain(data.map(function (d) { return d.key; }))
       .range([0, innerH]);
 
@@ -335,7 +361,7 @@
 
     // axis label
     gSel.select('.axis-label')
-      .attr('x', innerW / 2)
+      .attr('x', (plotLeftPad + innerW) / 2)
       .attr('y', innerH + margin.bottom - 4);
 
     // grid lines
@@ -385,18 +411,23 @@
 
     enter.append('text').attr('class', 'bar-label')
       .attr('y', yScale.bandwidth() / 2)
-      .attr('dy', '0.35em');
+      .attr('dy', '0.30em');
 
     enter.append('text').attr('class', 'bar-value')
       .attr('y', yScale.bandwidth() / 2)
-      .attr('dy', '0.35em');
+      .attr('dy', '0.30em');
 
     // ENTER + UPDATE (merged)
     var merged = enter.merge(bars);
 
     merged.transition().duration(TRANSITION_MS)
       .ease(d3.easeCubicInOut)
-      .style('opacity', 1)
+      .style('opacity', function (d) {
+        return (!state.keepAllVisible || d.highlighted) ? 1 : 0.25;
+      })
+      .style('filter', function (d) {
+        return (state.keepAllVisible && !d.highlighted) ? 'saturate(0.8)' : null;
+      })
       .attr('transform', function (d) {
         return 'translate(0,' + yScale(d.key) + ')';
       });
