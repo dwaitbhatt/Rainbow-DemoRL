@@ -1,0 +1,54 @@
+
+Reading data from plots_saved_data/PushCube-panda/pushcube-panda-eval_success_at_end.pkl
+Plotting bars to plots_saved_data/PushCube-panda//bars.pdf
+✓ Saved bar plot: plots_saved_data/PushCube-panda/bars.pdf
+
+============================================================
+Ablation pairs info:
+============================================================
+
+ablate_over_category   ablate_over_type
+type_action_mixing     ibrl                32
+                       resrl               32
+                       cheq                 8
+type_data_source       demos               48
+                       rollout             36
+type_data_usage        auxbc               28
+                       prefill             28
+                       prefill-auxbc       28
+type_pretrained_model  calql               13
+                       cql-h               13
+                       cql-rho             13
+                       mcq                 13
+Name: count, dtype: int64
+
+Number of outliers with AUC < 10000: 8
+============================================================
+
+
+============================================================
+Impact score of each component:
+============================================================
+
+                  count       mean        std  ...        50%        75%         max
+ablate_over_type                               ...                                  
+prefill            28.0  21.992359  14.608581  ...  17.478865  28.503611   56.834567
+demos              48.0  11.939859  33.488883  ...  16.251839  28.243558   61.910561
+prefill-auxbc      28.0   8.362585  43.042137  ...  18.890325  27.154881   67.491556
+mcq                13.0   4.052653  11.897171  ...   0.000000   3.919548   29.993747
+rollout            36.0   3.616742  35.703539  ...  13.283575  20.168776   67.491556
+resrl              28.0   0.542189  36.077626  ... -10.289481  -2.580568  154.189823
+auxbc              28.0  -5.236518  34.741941  ...   6.042835  13.324002   43.172267
+cql-rho            13.0  -5.507579  12.090896  ...  -5.299638  -2.492150   22.265199
+ibrl               28.0 -12.742596  25.788742  ...  -7.815347  -0.088122    8.469534
+cql-h              13.0 -24.383234  24.626202  ... -16.873861 -10.628400    5.452880
+calql              13.0 -24.732357  38.191622  ... -10.902657  -1.519896   30.448881
+cheq                8.0 -43.263653  16.685247  ... -43.803456 -33.421753  -19.992439
+
+[12 rows x 8 columns]
+
+============================================================
+Plotting impact whiskers plot
+============================================================
+
+✓ Saved whisker plot: plots_saved_data/PushCube-panda/impact_whiskers.pdf

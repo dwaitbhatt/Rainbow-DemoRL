@@ -1,0 +1,622 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  /* Prevent mobile browsers from auto-adjusting text sizes when using a fixed viewport ("desktop mode"). */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* ------------------------------------------------------------
+   Results (plots_saved_data)
+------------------------------------------------------------ */
+#results .results-frame {
+  background: rgba(10, 10, 10, 0.1);
+  border: 1px solid rgba(10, 10, 10, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(10, 10, 10, 0.08);
+  padding: 0rem 2rem 1.75rem;
+  margin-bottom: 2rem;
+}
+
+#results .results-frame .title {
+  margin-top: 0;
+}
+
+#results .results-frame .plots-grid {
+  margin-top: 0.25rem;
+}
+
+#results .title {
+  margin-bottom: 0.75rem !important;
+}
+
+#results .subtitle {
+  margin-top: 0 !important; /* override Bulma's negative subtitle margin */
+  margin-bottom: 1.25rem;
+}
+
+.plots-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.results-selectors {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.results-selector-bar {
+  display: flex;
+  flex-direction: column; /* Robot under Task */
+  gap: 0.9rem;
+  align-items: center; /* center both groups */
+  justify-content: center;
+}
+
+.results-selector-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center; /* center label + buttons */
+  width: 100%;
+  max-width: 720px; /* prevents super-wide groups on large screens */
+}
+
+.results-selector-label {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgba(10, 10, 10, 0.7);
+  text-align: center;
+}
+
+.results-selector-buttons {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.results-selector-buttons .button.is-selected {
+  box-shadow: 0 6px 16px rgba(50, 115, 220, 0.18);
+}
+
+.plots-card {
+  border: 1px solid rgba(10, 10, 10, 0.08);
+  box-shadow: 0 8px 24px rgba(10, 10, 10, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.top3-divider {
+  border: 0;
+  border-top: 2px solid rgba(10, 10, 10, 0.08);
+  margin: 0 0 0.75rem;
+}
+
+.top3-wrap {
+  padding: 0.5rem 0.75rem;
+  background: rgba(10, 10, 10, 0.02);
+  border: 1px solid rgba(10, 10, 10, 0.06);
+  border-radius: 10px;
+}
+
+.top3-heading {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.top3-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.top3-item {
+  margin: 0.25rem 0;
+  line-height: 1.35;
+}
+
+.top3-tag {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.top3-tag.is-gold {
+  background: #ffdd57;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.top3-tag.is-silver {
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.top3-tag.is-bronze {
+  background: #f2c29c;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.top3-method {
+  font-weight: 600;
+}
+
+.plot-panel {
+  height: 100%;
+  border: 1px solid rgba(10, 10, 10, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.plot-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.06);
+  background: rgba(10, 10, 10, 0.02);
+}
+
+.plot-panel-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+}
+
+.plot-panel-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.plot-panel-subtitle {
+  padding: 0.35rem 0.75rem 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(10, 10, 10, 0.65);
+}
+
+/* Image-based results panel */
+.plot-image-panel {
+  border: 1px solid rgba(10, 10, 10, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.plot-image-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.06);
+  background: rgba(10, 10, 10, 0.02);
+}
+
+.results-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #fff;
+}
+
+.plot-downloads {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 0.75rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.06);
+  background: rgba(10, 10, 10, 0.01);
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.teaser-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+/* Fix extra gap between header (institution) and Abstract */
+section.hero {
+  padding: 0; /* overrides bulma's section{padding:...} in this build */
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.results-carousel {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+/* Ensure carousel wrapper has proper positioning for navigation buttons */
+.carousel .slider-wrapper {
+  position: relative;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* Ensure carousel navigation buttons are positioned correctly */
+.carousel .slider-navigation-previous,
+.carousel .slider-navigation-next {
+  z-index: 10;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .slider-navigation-previous {
+  left: 10px;
+}
+
+.carousel .slider-navigation-next {
+  right: 10px;
+}
+
+.carousel .slider-navigation-previous:hover,
+.carousel .slider-navigation-next:hover {
+  opacity: 0.8;
+}
+
+.results-carousel video {
+  margin: 0;
+  max-width: 90%;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Video error fallback styling */
+.results-carousel .notification {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.results-carousel .notification a {
+  color: #3273dc;
+  text-decoration: underline;
+}
+
+.results-carousel .notification a:hover {
+  color: #2366d1;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+/* Strategy Cards (A/B/C) */
+#methodology .columns {
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+}
+
+#methodology .column .box {
+  height: 100%;
+  border: 2px solid rgba(72, 76, 83, 0.35);
+  box-shadow: 0 4px 12px rgba(72, 76, 83, 0.35);
+}
+
+#methodology {
+  padding-bottom: 0rem;
+}
+
+#results blockquote {
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+  border-left: 4px solid #f5c518;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(245, 197, 24, 0.15);
+}
+
+#results {
+  padding-top: 0rem;
+}
+
+#BibTeX {
+  padding-top: 1rem;
+}
+
+/* ============================================================
+   SEI Interactive Bar Chart
+   ============================================================ */
+
+.sei-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.sei-controls-section {
+  background: rgba(10, 10, 10, 0.02);
+  border: 1px solid rgba(10, 10, 10, 0.08);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.sei-section-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: rgba(10, 10, 10, 0.65);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --- Env / Robot grid: 3 columns, one per env --- */
+.sei-env-robot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.sei-env-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.sei-robot-row {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  min-height: 30px;
+}
+
+/* --- Strategy grid: 3 columns, one per strategy --- */
+.sei-strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.sei-strategy-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.sei-variant-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.sei-variant-label {
+  font-size: 0.7rem;
+  color: rgba(10, 10, 10, 0.45);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.15rem;
+}
+
+/* --- Toggle button base --- */
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.82rem;
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  background: rgba(10, 10, 10, 0.06);
+  color: rgba(10, 10, 10, 0.55);
+  user-select: none;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.toggle-btn:hover {
+  background: rgba(10, 10, 10, 0.10);
+  color: rgba(10, 10, 10, 0.75);
+}
+
+.toggle-btn.active {
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Env / Robot active color */
+.toggle-btn.active.env-robot-btn {
+  background: #3273dc;
+  box-shadow: 0 2px 8px rgba(50, 115, 220, 0.25);
+}
+
+/* Strategy-specific active colors */
+.toggle-btn.active.strategy-a-btn {
+  background: #e53935;
+  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.25);
+}
+
+.toggle-btn.active.strategy-b-btn {
+  background: #1e88e5;
+  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.25);
+}
+
+.toggle-btn.active.strategy-c-btn {
+  background: #43a047;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.25);
+}
+
+/* Master toggle slightly larger */
+.toggle-btn.master-btn {
+  font-size: 0.88rem;
+  padding: 0.35rem 0.85rem;
+  font-weight: 700;
+}
+
+/* --- Chart container --- */
+.sei-chart-container {
+  width: 100%;
+  overflow: visible;
+  padding: 0.5rem 0;
+}
+
+#sei-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SVG text defaults */
+#sei-chart text {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+#sei-chart .axis text {
+  font-size: 12px;
+  fill: rgba(10, 10, 10, 0.65);
+}
+
+#sei-chart .axis-label {
+  font-size: 13px;
+  font-weight: 600;
+  fill: rgba(10, 10, 10, 0.75);
+}
+
+#sei-chart .bar-label {
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+#sei-chart .bar-value {
+  font-size: 11px;
+  font-weight: 600;
+  fill: rgba(10, 10, 10, 0.6);
+}
+
+#sei-chart .zero-line {
+  stroke: rgba(10, 10, 10, 0.25);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+}
+
+#sei-chart .grid-line {
+  stroke: rgba(10, 10, 10, 0.08);
+  stroke-width: 1;
+}
+
+#sei-chart .label-separator {
+  stroke: rgba(10, 10, 10, 0.12);
+  stroke-width: 1;
+}

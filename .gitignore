@@ -1,0 +1,12 @@
+__pycache__/
+runs/
+demos/
+build/
+*venv*/
+wandb/
+*.egg-info/
+example*
+scripts/
+.wandb_cache/
+*_bkp/
+*.pyc

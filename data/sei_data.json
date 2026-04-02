@@ -1,0 +1,5348 @@
+[
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3751720518030599
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.441215779404926
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5643270421280462
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4198439041881219
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4179033004145742
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.0836043085150588
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5481029799516208
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4334034915263294
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.048623142428665195
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3848378627052783
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3867660821226198
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.08906089985446278
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.13799180322109983
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3284475672116315
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.004904268052972737
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.46361078601008826
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3673535019006815
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6559294248922447
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7405211767234344
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.880445809790076
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6433402235412436
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9504485377624252
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6530558258957484
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3945535036404329
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8017754911128759
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.31293493788002075
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4139847215581544
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8104803516415252
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5461468269228901
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3556786271460377
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7172086911359563
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5811279878007627
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.8118636980619587
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7434445285993533
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7725913499192899
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7491917891413125
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7560960065447876
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.892126931628065
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4917344571685239
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.41787841980515433
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.9554576648911115
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.42173481624538905
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.2895975723699178
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6822399622300499
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6277902729445978
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.8514621667340017
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6268199234459573
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.795944260855206
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7375666484996222
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.10303551392476645
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.25852256047914923
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4295346617288601
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.06126522819928392
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.19247257398106063
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5306466090522604
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5422904096307757
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "cheq",
+    "normalized_value": 2.331554113253583e-05
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.2215727454589361
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.502197202871141
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.46066251599181035
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.029170136861069267
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.02046527633241988
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.47815620676482
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4402205552005234
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.1652353065838829
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.2672513691037018
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.30902878716564103
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.30127869526229034
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.7822321908924027
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3148724295816531
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7521587190964151
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.1352247793264959
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3479036539281204
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5775740686681086
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.48691704710394307
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.44897830987514464
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.0913792671328786
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5131249283740141
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.10303551044908241
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5247127277302441
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.34699551082510455
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.34398507090199215
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5907999646226438
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.08747313170928435
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.09912937120279182
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.2585349865357789
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.18081013849064648
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6317088608366841
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.29737253968084065
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.39848453496423236
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5743761710005779
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.25466617515887924
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.08749800467664816
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.743435198630941
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4334656826300564
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.04287587858593845
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.09136683759834038
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.2623913871490591
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.02310042582514006
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": -0.04950996836347509
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4451343700719983
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3712783354869517
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.980192842801099
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.18143091288410282
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6633734007926391
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.24756041271562096
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.13411053311614005
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.22190985920098463
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5201577989438969
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.7596344327416881
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.32891901196435486
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7581064717665676
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.009144467767546039
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5381613204677174
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5779015415055464
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.13410880000291145
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6860845371837733
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6463096791142436
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5625772139219989
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": -0.0384406585888396
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.021222667175848288
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.14854089654483066
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.34337419986074114
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5129455613896762
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6426843364629138
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7029181937981777
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8304401396346671
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9350555210477315
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7834607789714109
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8647134825024169
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9494876175896508
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6139356001514102
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5273776579315954
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8520536474158452
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6319699479901928
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.09444943396923122
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0691990464644418
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.21228845606381724
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.7499025281239107
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7835069616803455
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9963861585122719
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.8591426932372362
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6536412393120917
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6139471901258443
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7149371845903785
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.4282402063715793
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.736619966434958
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.02540589813314867
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5850829527448056
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8700764495773939
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.8123249720552499
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.01246119640051617
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.18244828281631675
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.294047252276554
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.516045691945437
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.621174739776837
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8268147969833366
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.8663587415081958
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.35177563930445105
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.07278589836459137
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.27963823590624204
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.04166732849875119
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.08360800778342745
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.44438732997694275
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4875912541848324
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.11963693611489801
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.1377341426542415
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5056948760870159
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5417866631190477
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.09080096469991994
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.14137103098280515
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6319699479901928
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5417289347328801
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.25072650116094114
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.48890863422013575
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.16415068541723424
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.13810258412058674
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.5679907725762237
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.13409725432567782
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5127954675856399
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.055727954726024626
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2796382599924016
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.8181194364542932
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.043913969454532624
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.12331359178955563
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.2333733726681758
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.1882349348737255
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.03191462921298707
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.21705294524862995
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4984903734932898
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.40461247190741306
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.7401359575948924
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.03428491822257326
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.08617135847011526
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5201732138218177
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.19398471275545323
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6427997932352493
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8051551064932243
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5273430208998946
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8556905357444088
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8592812413640386
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3830451468351687
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6572549811316355
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8773271348800541
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.14131330259663755
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.2691089863671925
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": -0.034087638198964244
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.08716603572011802
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.2661405814057933
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": -0.021084039537163535
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4949112135508937
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.9870241271762967
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.9285495207976849
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7402453090862882
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6816544277915481
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5598556479895306
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9385884982811933
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.06556211426741157
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.41098408481454124
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": -0.3424975352891988
+  },
+  {
+    "env_id": "PickCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.2896402572930691
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4243952864420701
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.656868439432688
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.5383107448413368
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.3492671429215636
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.21169644375277863
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.4467204096276875
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.1316965959972318
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.17773910285307923
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5153925937517843
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6063251974773498
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3532531540235494
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.16158973380977998
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6669577027691656
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.0400013064043166
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.2977464240131053
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3738197152690195
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.737711794277695
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5957185655585734
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.704808554045452
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6770469543558713
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6265036952384656
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5557496037299363
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.43451690427677003
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5254818281764235
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.60632518302143
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.310600216284689
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5659035128268867
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6366252814551792
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.26264392465410824
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7375501355604467
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5861143506303068
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5556849154806256
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.17183949819597666
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7073147091159905
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7275902080609814
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5654184743412187
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8889535659923643
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 1.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7276063767290588
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.8991755222117209
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.641462070528309
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6467468676718933
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.927849028246049
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.9049285443276529
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6972254548231361
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6972901240831509
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5860820304562182
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.888856572024884
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9596106671416113
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6262126880323855
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.32641992441076484
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.9394644958920587
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8587504795902111
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.8180054576370367
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.02292047879281172
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.14141120713682517
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5861143479241582
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.658592882721883
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3334303742921876
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.31328417772742884
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.2177903830952308
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.6227739027293874
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.11454746053410318
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.2061744176974886
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.1546766159319623
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.3149871670962614
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.050413921499424454
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3840059680396009
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.00970123327420813
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.21760717911377037
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.034426525073926774
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3132518476192328
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.0690179426458185
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.21187248947837423
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.10095718515020659
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.47445353329106255
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.19185749037399735
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6063252001834973
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.4580432355497156
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.27504579982626026
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.6127885685892065
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.2920117210682261
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.5842066717163488
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.22225457914389926
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6366252868674753
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3531561419919534
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.11452912651703873
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6164467547822248
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.27237747628674136
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5758634313058585
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6163497843142876
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5760250990436003
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.666957702769165
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.41398267858648624
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5456603259375398
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5962359341408723
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.26257925267638055
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.42436298523414717
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.594205155212666
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.2322468223072069
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.3333657004987961
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6770469543558718
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.14124950775796738
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4342582281156293
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8284503956123811
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6467468676718933
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.8419201172569223
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5858233335016833
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6366576187913352
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.819054598016691
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6701722241189998
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5658388607289385
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": -0.017240755368832857
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.303700984643561
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.40152471037835646
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7171776327254331
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.39370716518557597
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.615521404075485
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4701827496448739
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.19287102062316375
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.47837313172054957
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.1216497287081618
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.32132984017237265
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.5073460483440586
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.10255500859088156
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5813819851960714
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.22204290429960719
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.17097057996898066
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.29921217579027687
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.21339864063831376
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.03573631588252729
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.35050335161822094
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4616752502187953
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5040212419691776
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 1.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8889375256072595
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5727924382513855
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4616752379900274
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4188915677025458
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6411806726886449
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7010340462916665
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.32913884768247403
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5812999376774639
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.59845168240701
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.28211512328556304
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7692581535642931
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7864645951264708
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.33340631364128354
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.27151834110059175
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.9145694160246085
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7950268089554747
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6066856411436734
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6581409257930987
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8462085628550273
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6668399046155014
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.27140409200060667
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.38469745659829974
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6752653488726558
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.05971658720438768
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4189189168819363
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7693949055658489
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6582777251835755
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.2820604127175793
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6239605137360843
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.726501811050967
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.36754571034260375
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.2072432269565047
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7949173793865488
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7522431463183098
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6407703311021684
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.3932049499099947
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5899168582590762
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6112403112876554
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.5641722807598816
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.02147835225901984
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2649633418697136
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.04245541903008273
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.7642408343093245
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.3571347065248943
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.02140980049587755
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.37143837004702557
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.33570205417266985
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.31633657134043186
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2393861391183122
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.1193237685367558
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.19999999284662573
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.06833353607847689
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.23079659828801047
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.1876572969673617
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.05712325429127762
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5856357563143455
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3758890673131981
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.2478389340810078
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2906226089567233
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.11114453719241532
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.7926653694260487
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.15016565213497748
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.6000228482878315
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6357591692673626
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.30777438579412236
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5642302343619245
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.2476474470539324
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.20513732356046685
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.20519202189968283
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4698544800345402
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6495240357736234
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.36732683286160056
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.726693290447291
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5899168460303085
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.43590655356285946
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5898894907463167
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7180763843836722
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.2478389310189245
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5129390646483639
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5129664077035877
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.4786628700925001
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5555586039558374
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5471058067039168
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.41864537848174654
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4357971484514696
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.4869515386536377
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7351187362305955
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -0.5928253140786189
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5214191919636658
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.606959202475249
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.5928481723312464
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6285844862914166
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.606931855585083
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6154666934879348
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.43576979621977807
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.40591150146807986
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.5211183005687097
+  },
+  {
+    "env_id": "PushCube",
+    "robot": "xArm6",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5042400995808791
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7926241612530042
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8401631492799314
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4418025197937979
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6450760001954171
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3967186443994037
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.423766870602574
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.6254114774726957
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5311413905436416
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7918057946260441
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8270508440881563
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6917992337336727
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7032800427006941
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.7680310550090265
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.6483494878816711
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.09836194549258447
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8360686727145803
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.79589765091808
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5885270637107519
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.899190807313798
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9319702527894648
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7450825571313172
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.9041036611328381
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.668032369814348
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8803341645534488
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8975435701018211
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7565607456045814
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7663943161863567
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8836102795481773
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7557371278776656
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8213170037363239
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7270495353217359
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.9808584598688289
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8639326420466059
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8991855631033695
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.7401618394138787
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7844325830864942
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.687704762592376
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6811499177515478
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8959042056554193
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -0.9904292299344144
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7680336790207152
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8737714588926759
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5270521590686125
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.7188474591312904
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.743440572996242
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5303387567712237
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.8270508459938104
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.8467232324681249
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "demos",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.43196107688475255
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.010662433839428827
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.35655811725407105
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.088528372418169
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.12950464862718086
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4549121962838556
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3991816290634856
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.3901559369788442
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.775171127518172
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.34016708361108067
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.1467245481679737
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.33851985079458363
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "cheq",
+    "normalized_value": 0.11065587716763749
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6221327469676142
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.33442274750657175
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.5163870973346606
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.39713336526073895
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.38278797199532366
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.13361224576151143
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.218033021853013
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "cheq",
+    "normalized_value": -0.9904292299344144
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.20655746435178782
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "none",
+    "A_datausage": "none",
+    "B_pretrainingtype": "none",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.273768835189231
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4098388140019884
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": 0.24426025280114308
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.13443323698527082
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.06967959993356866
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.9617169197376577
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.07213996014742208
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.033613554263823245
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.5502810003965374
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4549121976020541
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2622985213126205
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.1860614539948215
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.35081377572832173
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": 0.2188592645430377
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.15654762864110075
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.43687917638063173
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": -0.8564690763361199
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6811394243458793
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": 0.3934320421540383
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.02786397189666124
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.6417998881311646
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": 0.44507337679974723
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.05900405160796222
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.5237681828876298
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.26229065118555284
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.12950727322491806
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.4942569739239206
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": -0.7081144845591845
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": 0.04097889670183102
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.1901690516408597
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "bc",
+    "C_mixingtype": "none",
+    "normalized_value": -0.8755953023794926
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "ibrl",
+    "normalized_value": -0.06688820211420089
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "calql",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.658190927052577
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "none",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-h",
+    "C_mixingtype": "resrl",
+    "normalized_value": -1.0
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.29835407753363763
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "none",
+    "normalized_value": 0.0663982487881592
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "cql-rho",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.8373122229728438
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "ibrl",
+    "normalized_value": 0.1499980321163227
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "none",
+    "normalized_value": -0.8277414529072583
+  },
+  {
+    "env_id": "StackCube",
+    "robot": "Panda",
+    "A_datasource": "rollout",
+    "A_datausage": "prefill-auxbc",
+    "B_pretrainingtype": "mcq",
+    "C_mixingtype": "resrl",
+    "normalized_value": -0.6937966133953928
+  }
+]

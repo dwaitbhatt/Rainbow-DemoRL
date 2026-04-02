@@ -1,0 +1,54 @@
+
+Reading data from plots_saved_data/StackCube-panda/stackcube-panda-eval_success_at_end.pkl
+Plotting bars to plots_saved_data/StackCube-panda//bars.pdf
+✓ Saved bar plot: plots_saved_data/StackCube-panda/bars.pdf
+
+============================================================
+Ablation pairs info:
+============================================================
+
+ablate_over_category   ablate_over_type
+type_action_mixing     ibrl                32
+                       resrl               32
+                       cheq                 8
+type_data_source       demos               48
+                       rollout             36
+type_data_usage        auxbc               28
+                       prefill             28
+                       prefill-auxbc       28
+type_pretrained_model  calql               13
+                       cql-h               13
+                       cql-rho             13
+                       mcq                 13
+Name: count, dtype: int64
+
+Number of outliers with AUC < 1000: 8
+============================================================
+
+
+============================================================
+Impact score of each component:
+============================================================
+
+                  count        mean  ...         75%          max
+ablate_over_type                     ...                         
+calql              13.0  517.044720  ...   42.637744  6686.129096
+ibrl               28.0  410.736842  ...   50.455566  8520.349409
+auxbc              28.0  370.274705  ...  162.643497  6416.707867
+mcq                13.0  368.593928  ...   10.384999  4862.629053
+demos              48.0  363.818067  ...  433.369625  6416.707867
+cql-rho            13.0  236.302573  ...    4.494768  3026.683147
+cql-h              13.0  233.290674  ...   12.108324  3251.620025
+prefill            28.0  132.628227  ...  136.931546   966.720000
+prefill-auxbc      28.0   67.543638  ...   90.082931   850.026667
+rollout            36.0  -41.410090  ...   -5.079423    52.724282
+cheq                8.0  -50.987301  ...  -44.700941    85.071907
+resrl              28.0  -96.246234  ...  -95.327889   -76.943898
+
+[12 rows x 8 columns]
+
+============================================================
+Plotting impact whiskers plot
+============================================================
+
+✓ Saved whisker plot: plots_saved_data/StackCube-panda/impact_whiskers.pdf

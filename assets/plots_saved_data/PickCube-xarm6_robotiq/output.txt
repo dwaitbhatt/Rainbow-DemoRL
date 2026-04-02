@@ -1,0 +1,54 @@
+
+Reading data from plots_saved_data/PickCube-xarm6_robotiq/pickcube-xarm6_robotiq-eval_success_at_end.pkl
+Plotting bars to plots_saved_data/PickCube-xarm6_robotiq//bars.pdf
+✓ Saved bar plot: plots_saved_data/PickCube-xarm6_robotiq/bars.pdf
+
+============================================================
+Ablation pairs info:
+============================================================
+
+ablate_over_category   ablate_over_type
+type_action_mixing     ibrl                32
+                       resrl               32
+                       cheq                 8
+type_data_source       demos               48
+                       rollout             36
+type_data_usage        auxbc               28
+                       prefill             28
+                       prefill-auxbc       28
+type_pretrained_model  calql               13
+                       cql-h               13
+                       cql-rho             13
+                       mcq                 13
+Name: count, dtype: int64
+
+Number of outliers with AUC < 10000: 8
+============================================================
+
+
+============================================================
+Impact score of each component:
+============================================================
+
+                  count       mean        std  ...        50%        75%        max
+ablate_over_type                               ...                                 
+prefill            28.0  18.766729  29.055644  ...  18.647534  40.882242  60.619078
+demos              48.0  11.107262  36.144139  ...  12.839808  36.894870  66.087140
+cql-rho            13.0   5.743859  14.172698  ...   1.868625   4.546100  43.743367
+mcq                13.0   5.356599   6.321693  ...   2.590957   8.124471  19.412399
+prefill-auxbc      28.0  -6.108590  50.185877  ...   9.288201  35.124556  66.087140
+auxbc              28.0  -6.363481  24.387481  ...  -1.667085   6.636385  35.807330
+cql-h              13.0  -6.402852  30.192875  ...   1.298539   3.240078  29.046340
+rollout            36.0  -9.913839  37.046081  ... -12.360147  17.255243  59.143570
+resrl              28.0 -10.068207  20.066777  ...  -6.097292  -0.369806  36.236566
+calql              13.0 -11.416194  34.516437  ...  -2.109252   3.030387  31.101967
+ibrl               28.0 -17.572154  22.637479  ... -14.335914  -9.428094  30.005077
+cheq                8.0 -39.828712  24.266410  ... -31.376733 -22.635903 -16.503827
+
+[12 rows x 8 columns]
+
+============================================================
+Plotting impact whiskers plot
+============================================================
+
+✓ Saved whisker plot: plots_saved_data/PickCube-xarm6_robotiq/impact_whiskers.pdf

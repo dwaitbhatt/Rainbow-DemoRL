@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+  <meta charset="utf-8">
+  <meta name="description" content="Large-scale empirical study of strategies for leveraging demonstrations to accelerate online reinforcement learning">
+  <meta property="og:title" content="Rainbow-DemoRL: Combining Improvements in Demonstration-Augmented Reinforcement Learning"/>
+  <meta property="og:description" content="Large-scale empirical study of strategies for leveraging demonstrations to accelerate online reinforcement learning"/>
+  <meta property="og:url" content="https://dwaitbhatt.com/Rainbow-DemoRL/"/>
+  <meta property="og:image" content="assets/overview.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="reinforcement learning, imitation learning, behavior cloning, offline reinforcement learning, demonstration-augmented reinforcement learning">
+  <!-- Force "desktop" layout on mobile by using a fixed viewport width (no responsive device-width). -->
+  <meta name="viewport" content="width=1200">
+
+  <title>Rainbow-DemoRL: Combining Improvements in Demonstration-Augmented Reinforcement Learning</title>
+  <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/sei-chart.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Rainbow-DemoRL: Combining Improvements in Demonstration-Augmented Reinforcement Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors - Fill in with your authors -->
+              <span class="author-block">
+                <a href="https://dwaitbhatt.com/" target="_blank">Dwait Bhatt</a>,
+                  <a href="https://www.linkedin.com/in/shih-chieh-chou-70426827b/">Shih-Chieh Chou</a>,
+                  <a href="https://natanaso.github.io/" target="_blank">Nikolay Atanasov</a>
+                </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">UC San Diego</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <!-- <div class="column has-text-centered"> -->
+              <!-- <div class="publication-links"> -->
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/YOUR-ARXIV-ID.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/YOUR-ARXIV-ID" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              <!-- </div> -->
+            <!-- </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              <!-- Fill in your abstract here -->
+              Several approaches have been proposed to improve the sample efficiency of online reinforcement learning (RL) by leveraging demonstrations collected offline. The offline data can be used directly as transitions to optimize the RL objectives, or offline policy and value functions can first be inferred from the data for online finetuning or to provide reference actions. While each of these strategies has shown compelling results, it is not clear which method has the most impact on the final performance, whether these approaches can be combined, and if there are cumulative benefits. We classify existing demonstration-augmented RL approaches into three categories and perform an extensive empirical study of their strengths, weaknesses, and combinations to identify the contribution of each strategy and identify effective hybrid combinations for sample-efficient online RL.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Teaser video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser-video" class="teaser-video" controls autoplay loop muted playsinline preload="metadata" poster="assets/overview.png">
+          <source src="assets/rainbow_teaser.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Optional: Add a caption/description below the image -->
+        <!-- <h2 class="subtitle has-text-centered">
+          Your overview description here
+        </h2> -->
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <section class="section" id="methodology">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-2 has-text-centered">Method</h2>
+          <div class="content has-text-justified">
+            <p>
+              Inspired by Rainbow-DQN, which clarified the importance of various extensions to the DQN algorithm, <strong>Rainbow-DemoRL</strong> performs a large-scale empirical study to identify how different strategies for leveraging offline demonstrations can be combined to maximize online reinforcement learning efficiency and performance.
+            </p>
+          </div>
+  
+          <h4 class="title is-4">A Taxonomy of Demonstration-Augmented RL</h4>
+          <div class="content has-text-centered">
+            <img src="assets/method_overview.png" alt="Taxonomy of strategies" style="max-width: 80%; margin-bottom: 20px;" />
+            <p class="is-size-6 italic">We classify existing approaches into three distinct, non-mutually exclusive strategies.</p>
+          </div>
+  
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <h4 class="title is-4">Strategy A</h4>
+                <p class="is-size-6"><strong>Direct Data Sampling</strong></p>
+                <p>Uses offline data directly within the online training loop. This includes <strong><em>prefilling</em></strong> the replay buffer (with 50/50 sampling) or adding an <strong><em>auxiliary behavior cloning (BC)</em></strong> loss to the RL actor objective.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h4 class="title is-4">Strategy B</h4>
+                <p class="is-size-6"><strong>Pretraining</strong></p>
+                <p>Extracts an initial policy or value function, providing a strong starting point for online fine-tuning. This can be done via offline RL - <strong><em></em>CQL</em></strong> or <strong><em>CalQL</em></strong>, or via a simple recipe we propose - <strong><em>Monte-Carlo-Q (MCQ)</em></strong>.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h4 class="title is-4">Strategy C</h4>
+                <p class="is-size-6"><strong>Control Priors</strong></p>
+                <p>Uses a pre-trained offline policy as a reference for online actions. This involves "mixing" actions via <strong><em></em>residual RL</em></strong>, uncertainty-based interpolation (<strong><em>CHEQ</em></strong>), or selection based on Q-values (<strong><em>IBRL</em></strong>).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section" id="results">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-2 has-text-centered">Results</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              We evaluate hybrid algorithms combining strategies A+B, A+C, B+C, and A+B+C with several variants for each, using <strong><em>Soft Actor-Critic</em></strong> as the base online RL algorithm.
+              For each task-robot setting, we show i) a comparison of the area under the success rate curve (AUC) across all methods and ii) the per-component impact.
+            </p>
+          </div>
+
+          <div class="results-frame">
+            <div id="sei-controls" class="sei-controls"></div>
+            <div id="sei-chart-container" class="sei-chart-container">
+              <svg id="sei-chart"></svg>
+            </div>
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              From the results, the following conclusions are most useful for practitioners:
+            </p>
+            <blockquote>
+              <strong>Key Finding 1:</strong> Prefill hybrids dominate the top 10 algorithms for all environments and robots considered. Hence the replay buffer <strong>prefill</strong> strategy which entails 50/50 sampling from offline data and online replay buffer along with critic ensembles and high UTD, is most impactful for sample-efficient online RL.
+            </blockquote>
+            <blockquote>
+              <strong>Key Finding 2:</strong> Prefill+MCQ variants are consistently the best performers for all of the tasks considered. Hence, pretraining with the proposed simple recipe, <strong>Monte-Carlo-Q (MCQ)</strong>, outperforms pretraining with offline RL when combined with the prefill strategy.
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Results -->
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Demonstrations</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" controls muted loop preload="none" data-src="assets/videos/video1.mp4">
+              <p>Your browser does not support the video tag. <a href="assets/videos/video1.mp4" target="_blank">Download video</a></p>
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" controls muted loop preload="none" data-src="assets/videos/video2.mp4">
+              <p>Your browser does not support the video tag. <a href="assets/videos/video2.mp4" target="_blank">Download video</a></p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+  <!-- BibTeX citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{bhatt2025rainbow,
+  title={Rainbow-DemoRL: Combining Improvements in Demonstration-Augmented Reinforcement Learning},
+  author={Dwait Bhatt and Shih-Chieh Chou and Nikolay Atanasov},
+  year={2025},
+  url={https://dwaitbhatt.com/Rainbow-DemoRL/}
+}</code></pre>
+    </div>
+  </section>
+  <!-- End BibTeX citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- End of Statcounter Code -->
+
+</body>
+</html>
