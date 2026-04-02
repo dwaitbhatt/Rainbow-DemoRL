@@ -2,7 +2,7 @@
   'use strict';
 
   // ── Constants ──────────────────────────────────────────────────
-  var ENVS = ['PickCube', 'PushCube', 'StackCube'];
+  var ENVS = ['PushCube', 'PickCube', 'StackCube'];
   var ROBOTS = ['xArm6', 'Panda'];
   var INVALID_COMBOS = { 'StackCube|xArm6': true };
 
@@ -117,6 +117,49 @@
     return result;
   }
 
+  function computeSelectedAverage(data) {
+    var selected = state.keepAllVisible
+      ? data.filter(function (d) { return d.highlighted; })
+      : data.slice();
+
+    if (!selected.length) {
+      return { value: 0, display: '0.00' };
+    }
+
+    var sum = selected.reduce(function (acc, d) { return acc + d.sei; }, 0);
+    var avg = sum / selected.length;
+    return { value: avg, display: avg.toFixed(2) };
+  }
+
+  function updateAverageBadge(avgInfo) {
+    var badgeEl = d3.select('#sei-average-badge');
+    var valueEl = d3.select('#sei-average-value');
+    if (badgeEl.empty() || valueEl.empty()) return;
+
+    badgeEl.classed('is-positive', avgInfo.value > 0);
+    badgeEl.classed('is-negative', avgInfo.value < 0);
+
+    var previous = parseFloat(valueEl.attr('data-current-value'));
+    if (isNaN(previous)) previous = avgInfo.value;
+    valueEl.attr('data-current-value', String(avgInfo.value));
+
+    valueEl
+      .interrupt()
+      .style('opacity', 0.75)
+      .transition()
+      .duration(TRANSITION_MS)
+      .ease(d3.easeCubicInOut)
+      .styleTween('opacity', function () {
+        return d3.interpolateNumber(0.75, 1);
+      })
+      .tween('text', function () {
+        var i = d3.interpolateNumber(previous, avgInfo.value);
+        return function (t) {
+          this.textContent = i(t).toFixed(2);
+        };
+      });
+  }
+
   // ── Label helpers ──────────────────────────────────────────────
   function buildLabelSpans(d) {
     if (isSAC(d)) return [{ text: 'SAC', color: COLOR_SAC }];
@@ -146,7 +189,10 @@
 
     // Section 1: Env / Robot
     var sec1 = el('div', 'sei-controls-section');
-    sec1.appendChild(sectionTitle('Environment & Robot'));
+    sec1.appendChild(sectionTitle('Environment & Robot Selection'));
+    var envSubtitle = el('div', 'sei-section-subtitle');
+    envSubtitle.textContent = 'Tasks are ordered by difficulty from left to right';
+    sec1.appendChild(envSubtitle);
 
     var grid1 = el('div', 'sei-env-robot-grid');
     ENVS.forEach(function (env) {
@@ -337,6 +383,8 @@
 
   function updateChart() {
     var data = computeDisplayData();
+    var avgInfo = computeSelectedAverage(data);
+    updateAverageBadge(avgInfo);
     var container = document.getElementById('sei-chart-container');
     if (!container) return;
     var totalWidth = container.clientWidth || 800;

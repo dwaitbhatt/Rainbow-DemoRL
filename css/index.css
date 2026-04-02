@@ -13,7 +13,7 @@ body {
   border: 1px solid rgba(10, 10, 10, 0.10);
   border-radius: 16px;
   box-shadow: 0 14px 40px rgba(10, 10, 10, 0.08);
-  padding: 0rem 2rem 1.75rem;
+  padding: 0.6rem 2rem 1.75rem;
   margin-bottom: 2rem;
 }
 
@@ -461,6 +461,14 @@ section.hero.is-light .content p {
   letter-spacing: 0.04em;
 }
 
+.sei-section-subtitle {
+  font-size: 0.78rem;
+  color: rgba(10, 10, 10, 0.5);
+  font-style: italic;
+  margin: -0.25rem 0 0.65rem;
+  text-align: center;
+}
+
 /* --- Env / Robot grid: 3 columns, one per env --- */
 .sei-env-robot-grid {
   display: grid;
@@ -582,6 +590,46 @@ section.hero.is-light .content p {
   width: 100%;
   overflow: visible;
   padding: 0.5rem 0;
+}
+
+.sei-average-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: fit-content;
+  margin: 0 auto 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(10, 10, 10, 0.12);
+  background: rgba(10, 10, 10, 0.04);
+  color: rgba(10, 10, 10, 0.72);
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, opacity 0.25s ease;
+}
+
+.sei-average-badge.is-positive {
+  color: #2e7d32;
+  border-color: rgba(67, 160, 71, 0.45);
+  background: rgba(67, 160, 71, 0.10);
+}
+
+.sei-average-badge.is-negative {
+  color: #c62828;
+  border-color: rgba(229, 57, 53, 0.45);
+  background: rgba(229, 57, 53, 0.10);
+}
+
+.sei-average-label {
+  opacity: 0.9;
+}
+
+.sei-average-value {
+  min-width: 3.5ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }
 
 #sei-chart {

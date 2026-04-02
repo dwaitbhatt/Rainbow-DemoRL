@@ -165,7 +165,7 @@
               <div class="box">
                 <h4 class="title is-4">Strategy A</h4>
                 <p class="is-size-6"><strong>Direct Data Sampling</strong></p>
-                <p>Uses offline data directly within the online training loop. This includes <strong><em>prefilling</em></strong> the replay buffer (with 50/50 sampling) or adding an <strong><em>auxiliary behavior cloning</em></strong> loss to the RL actor objective.</p>
+                <p>Uses offline data directly within the online training loop. This includes <strong><em>prefilling</em></strong> the replay buffer (like RLPD) or adding an <strong><em>auxiliary behavior cloning</em></strong> loss to the RL actor objective.</p>
               </div>
             </div>
             <div class="column">
@@ -198,13 +198,21 @@
           <div class="content has-text-justified">
             <p>
               We evaluate hybrid algorithms combining strategies using Soft Actor-Critic (SAC) as the base online RL algorithm.
-              For each task-robot setting, we show the Sample Efficiency Improvement (SEI) scores of the hybrid algorithms compared to SAC. The SEI score represents the average normalized percentage improvement in Area-Under-Curve (AUC) over the SAC baseline across all experimental settings, accounting for both learning speed and final success rates.
+              For each task-robot setting, we present the Sample Efficiency Improvement (SEI) scores of hybrid algorithms compared to SAC. The SEI score represents the normalized percentage improvement in area-under-curve of success rate plots, averaged across all experimental settings. This allows the metric to capture both learning speed and final success rates.
             </p>
+            <p>
+              Click around to see how strategy choices and task settings (env/robot) shift the SEI score distribution.
+            </p>
+
           </div>
 
           <div class="results-frame">
             <div id="sei-controls" class="sei-controls"></div>
             <div id="sei-chart-container" class="sei-chart-container">
+              <div id="sei-average-badge" class="sei-average-badge" role="status" aria-live="polite">
+                <span class="sei-average-label">Average SEI (Selected):</span>
+                <span id="sei-average-value" class="sei-average-value">0.00</span>
+              </div>
               <svg id="sei-chart"></svg>
             </div>
           </div>
