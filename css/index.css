@@ -530,58 +530,64 @@ section.hero.is-light .content p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
-  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
   font-size: 0.82rem;
   font-family: 'Google Sans', 'Noto Sans', sans-serif;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
-  border: 2px solid transparent;
-  background: rgba(10, 10, 10, 0.06);
+  transition: all 0.1s ease;
+  border: 2px solid #222;
+  background: #f3f4f6;
   color: rgba(10, 10, 10, 0.55);
   user-select: none;
   line-height: 1.3;
   white-space: nowrap;
+  box-shadow: 3px 3px 0 #222;
 }
 
 .toggle-btn:hover {
-  background: rgba(10, 10, 10, 0.10);
-  color: rgba(10, 10, 10, 0.75);
+  background: #e9eaed;
+  color: rgba(10, 10, 10, 0.8);
+  box-shadow: 4px 4px 0 #222;
+  transform: translate(-1px, -1px);
+}
+
+.toggle-btn:active {
+  box-shadow: 0 0 0 #222;
+  transform: translate(3px, 3px);
 }
 
 .toggle-btn.active {
   color: #fff;
-  border-color: transparent;
+  border: 2px solid #222;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 #222;
 }
 
 /* Env / Robot active color */
 .toggle-btn.active.env-robot-btn {
   background: #5a5a5a;
   color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 8px rgba(10, 10, 10, 0.22);
 }
 
 /* Strategy-specific active colors */
 .toggle-btn.active.strategy-a-btn {
   background: #e53935;
-  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.25);
 }
 
 .toggle-btn.active.strategy-b-btn {
   background: #1e88e5;
-  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.25);
 }
 
 .toggle-btn.active.strategy-c-btn {
   background: #43a047;
-  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.25);
 }
 
 /* Master toggle slightly larger */
 .toggle-btn.master-btn {
   font-size: 0.88rem;
-  padding: 0.35rem 0.85rem;
+  padding: 0.4rem 1rem;
   font-weight: 700;
 }
 

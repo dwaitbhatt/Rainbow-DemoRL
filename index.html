@@ -163,21 +163,30 @@
           <div class="columns">
             <div class="column">
               <div class="box">
-                <h4 class="title is-4">Strategy A</h4>
+                <div class="has-text-centered">
+                  <h4 class="title is-4">Strategy A</h4>
+                  <p class="subtitle is-6 is-italic mb-5">TLDR: Using offline dataset directly</p>
+                </div>
                 <p class="is-size-6"><strong>Direct Data Sampling</strong></p>
                 <p>Uses offline data directly within the online training loop. This includes <strong><em>prefilling</em></strong> the replay buffer (like RLPD) or adding an <strong><em>auxiliary behavior cloning</em></strong> loss to the RL actor objective.</p>
               </div>
             </div>
             <div class="column">
               <div class="box">
-                <h4 class="title is-4">Strategy B</h4>
+                <div class="has-text-centered">
+                  <h4 class="title is-4">Strategy B</h4>
+                  <p class="subtitle is-6 is-italic mb-5">TLDR: Using pretrained model weights</p>
+                </div>
                 <p class="is-size-6"><strong>Pretraining</strong></p>
                 <p>Extracts an initial policy or value function, providing a strong starting point for online fine-tuning. This can be done via <strong><em>behavior cloning (BC)</em></strong>, offline RL methods like <strong><em>CQL</em></strong> and <strong><em>CalQL</em></strong>, or via a simple recipe we propose, <strong><em>Monte-Carlo-Q (MCQ)</em></strong>.</p>
               </div>
             </div>
             <div class="column">
               <div class="box">
-                <h4 class="title is-4">Strategy C</h4>
+                <div class="has-text-centered">
+                  <h4 class="title is-4">Strategy C</h4>
+                  <p class="subtitle is-6 is-italic mb-5">TLDR: Using outputs from pretrained models</p>
+                </div>
                 <p class="is-size-6"><strong>Control Priors</strong></p>
                 <p>Uses a pre-trained offline policy as a reference for online actions. This involves "mixing" actions via <strong><em>residual RL</em></strong>, uncertainty-based interpolation (<strong><em>CHEQ</em></strong>), or selection based on Q-values (<strong><em>IBRL</em></strong>).</p>
               </div>
