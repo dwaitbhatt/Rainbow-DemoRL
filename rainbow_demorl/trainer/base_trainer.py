@@ -162,9 +162,11 @@ class BaseTrainer:
         self.agent.eval_episode_timestep = 0
         eval_metrics = defaultdict(list)
         num_episodes = 0
-        for _ in range(self.args.num_eval_steps):
+        total_reward = 0
+        for i in range(self.args.num_eval_steps):
             with torch.no_grad():
-                eval_obs, eval_rew, eval_terminations, eval_truncations, eval_infos = self.eval_envs.step(self.agent.get_eval_action(eval_obs))
+                eval_obs, eval_rew, eval_terminations, eval_truncations, eval_infos = self.eval_envs.step(self.agent.get_eval_action(eval_obs.to(self.device)))
+                total_reward += eval_rew
                 self.agent.eval_episode_timestep += 1
                 if "episode" in eval_infos:
                     for k, v in eval_infos["episode"].items():
@@ -174,7 +176,7 @@ class BaseTrainer:
                     num_episodes += mask.sum()
                     for k, v in eval_infos["final_info"]["episode"].items():
                         eval_metrics[k].append(v)
-        
+        total_reward = total_reward[0].item()
         eval_metrics_mean = {}
         for k, v in eval_metrics.items():
             if len(v) > 0:
@@ -192,8 +194,7 @@ class BaseTrainer:
             eval_metrics_mean['return'] = torch.tensor(0.0)
             
         self.pbar.set_description(
-            f"success_once: {eval_metrics_mean['success_once']:.2f}, "
-            f"return: {eval_metrics_mean['return']:.2f}"
+            f"return: {total_reward:.2f}"
         )
         if self.logger is not None:
             eval_time = time.perf_counter() - stime
@@ -201,23 +202,21 @@ class BaseTrainer:
             self.logger.add_scalar("time/eval_time", eval_time, self.global_step)
         self.agent.actor.train()
 
-        # Check if current return is better than best return so far
-        current_return = eval_metrics_mean.get('return', float('-inf'))
+        run_dir = experiment_run_dir(self.args)
+        current_return = total_reward
         if current_return > self.best_return:
             previous_best = self.best_return
             self.best_return = current_return
             if self.args.save_model and not self.args.evaluate:
-                # Delete previous best model
-                previous_best_model_path = f"{self.args.save_model_dir}/{self.args.env_id}/{self.args.robot}/{self.args.exp_name}/best_model_ret_{previous_best:.2f}.pt"
+                previous_best_model_path = os.path.join(run_dir, f"best_model_ret_{previous_best:.2f}.pt")
                 if os.path.exists(previous_best_model_path):
                     os.remove(previous_best_model_path)
-                best_model_path = f"{self.args.save_model_dir}/{self.args.env_id}/{self.args.robot}/{self.args.exp_name}/best_model_ret_{self.best_return:.2f}.pt"
+                best_model_path = os.path.join(run_dir, f"best_model_ret_{self.best_return:.2f}.pt")
                 self.agent.save_model(best_model_path)
                 print(f"[Step {self.global_step}] New best model saved! Return: {current_return:.2f} (previous best: {previous_best:.2f})")
 
         if self.args.save_model and not self.args.evaluate:
-            model_path = f"{self.args.save_model_dir}/{self.args.env_id}/{self.args.robot}/{self.args.exp_name}/ckpt_{self.global_step}.pt"
+            model_path = os.path.join(run_dir, f"ckpt_{self.global_step}.pt")
             self.agent.save_model(model_path)
 
         return eval_metrics_mean
-

@@ -1,15 +1,15 @@
 import os
 import time
 from collections import defaultdict
-from typing import Optional
+from typing import Optional, Union
 
 import gymnasium as gym
 import torch
 import tqdm
 from tensordict import TensorDict
 
-from rainbow_demorl.agents import BaseAgent
-from rainbow_demorl.utils.common import Args
+from rainbow_demorl.agents import BaseAgent, MonteCarloQAgentReal
+from rainbow_demorl.utils.common import Args, experiment_run_dir
 from rainbow_demorl.utils.replay_buffer_traj import TrajReplayBuffer
 
 from .base_trainer import BaseTrainer
@@ -18,7 +18,7 @@ from .base_trainer import BaseTrainer
 class OnlineTrainer(BaseTrainer):
     def __init__(self, 
                  args: Args, 
-                 agent: BaseAgent,
+                 agent: Union[BaseAgent, MonteCarloQAgentReal],
                  envs: gym.Env,
                  eval_envs: gym.Env,
                  env_kwargs: dict,
@@ -39,7 +39,7 @@ class OnlineTrainer(BaseTrainer):
         self.final_lam_val = torch.full((self.args.num_envs, 1), self.args.lam_start, device=self.device)
 
         ## Setup replay buffer
-        self.rb_online = TrajReplayBuffer(self.args, self.args.online_buffer_size, self.args.horizon, device=self.device)
+        self.rb_online = TrajReplayBuffer(self.args, self.args.online_buffer_size)
 
         # Enable on-disk saving of the replay buffer if requested
         if self.args.save_buffer:
@@ -56,11 +56,13 @@ class OnlineTrainer(BaseTrainer):
             return
 
         if args.offline_buffer_type.lower() == "demos":
-            self.rb_offline = TrajReplayBuffer(self.args, self.args.offline_buffer_size, self.args.horizon, device=self.device)
+            assert self.args.demo_path is not None, "Offline buffer type 'demos' is only allowed when a demo type/path is provided"
+            self.rb_offline = TrajReplayBuffer(self.args, self.args.offline_buffer_size)
             pad_repeat = self.args.act_num_queries if self.args.algorithm.startswith("ACT") else 0
             self.rb_offline.fill_from_demos(self.args.demo_path, pad_repeat=pad_repeat)
         elif args.offline_buffer_type.lower() == "rollout":
-            self.rb_offline = TrajReplayBuffer(self.args, self.args.offline_buffer_size, self.args.horizon, device=self.device)
+            assert self.args.pretrained_offline_policy_path is not None, "Offline buffer type 'rollout' is only allowed when finetuning a pretrained offline policy"
+            self.rb_offline = TrajReplayBuffer(self.args, self.args.offline_buffer_size)
             # Temporarily disable CHEQ steps to rollout the offline policy
             is_cheq = self.agent.args.is_cheq
             self.agent.args.is_cheq = False
@@ -78,23 +80,23 @@ class OnlineTrainer(BaseTrainer):
             obs = {k: v.unsqueeze(1).to(device) for k,v in obs.items()}
             obs = TensorDict(obs, batch_size=(), device=device)
         else:
-            obs = obs.unsqueeze(1).to(device)
+            obs = obs.unsqueeze(1).to(device).float()
         if action is None:
             action = torch.full((num_envs, self.args.action_dim), float('nan'), device=device)
         else:
-            action = action.to(device)
+            action = action.to(device).float()
         if reward is None:
             reward = torch.full((num_envs,), float('nan'), device=device)
         else:
-            reward = reward.to(device)
+            reward = reward.to(device).float()
         if terminated is None:
             terminated = torch.full((num_envs,), float('nan'), device=device)
         else:
-            terminated = terminated.to(device)
+            terminated = terminated.to(device).float()
         if truncated is None:
             truncated = torch.full((num_envs,), float('nan'), device=device)
         else:
-            truncated = truncated.to(device)
+            truncated = torch.tensor([truncated]).to(device).float()
         td = TensorDict(dict(
             obs=obs,
             action=action.unsqueeze(1),
@@ -103,6 +105,17 @@ class OnlineTrainer(BaseTrainer):
             truncated=truncated.unsqueeze(1),
             ), batch_size=(num_envs, 1), device=device)
         return td
+
+    def set_sim_cube_to_real_pos(self):
+        import mani_skill.envs.utils.randomization as randomization
+        from mani_skill.utils.structs.pose import Pose
+
+        real_cube_rel_pos = self.envs.curr_obs["tcp_to_obj_pos"]
+        sim_robot_eef_pos = self.envs.base_sim_env.agent.tcp_pose.p
+        sim_cube_pos = sim_robot_eef_pos + real_cube_rel_pos
+
+        qs = randomization.random_quaternions(1, lock_x=True, lock_y=True, lock_z=True)
+        self.envs.base_sim_env.cube.set_pose(Pose.create_from_pq(sim_cube_pos, qs))
 
     def rollout_and_fill_traj_buffer(self, starting_obs: torch.Tensor, 
                                      fill_offline_buffer: bool = False):
@@ -119,6 +132,7 @@ class OnlineTrainer(BaseTrainer):
         else:
             iterable = range(rollout_steps)
         for local_step in iterable:
+            # print(f"[Rollout] local_step: {local_step}/{rollout_steps}")
             if self.done:
                 if self.global_step > 0 or (fill_offline_buffer and local_step > 0):
                     if self.agent.args.is_cheq:
@@ -130,8 +144,9 @@ class OnlineTrainer(BaseTrainer):
                     tds = torch.cat(self.episode_tds, dim=1) # [num_envs, episode_len + 1, ..]
                     target_buffer.add(tds)
                 obs, _ = self.envs.reset()
+                self.set_sim_cube_to_real_pos()
                 self.episode_tds = []
-                self.agent.train_episode_timestep = -1 # immediately updated to 0 below at first step
+                self.agent.train_episode_timestep = -1
 
             if fill_offline_buffer:
                 iterable.update(1)
@@ -158,7 +173,7 @@ class OnlineTrainer(BaseTrainer):
                     actions = self.agent.sample_action(obs)
                     actions = actions.detach()
 
-            next_obs, rewards, terminations, truncations, infos = self.envs.step(actions)
+            next_obs, rewards, terminations, truncations, infos = self.envs.step(actions.cpu())
             real_next_obs = next_obs.clone()
 
             if self.args.bootstrap_at_done == 'never':
@@ -252,7 +267,8 @@ class OnlineTrainer(BaseTrainer):
                 self.logger.add_scalar("time/total_rollout+update_time", self.cumulative_times["rollout_time"] + self.cumulative_times["update_time"], self.global_step)
 
         if not self.args.evaluate and self.args.save_model:
-            model_path = f"{self.args.save_model_dir}/{self.args.env_id}/{self.args.robot}/{self.args.exp_name}/final_ckpt.pt"
+            run_dir = experiment_run_dir(self.args)
+            model_path = os.path.join(run_dir, "final_ckpt.pt")
             self.agent.save_model(model_path)
         
         print("Online training completed. Performing final cleanup...")

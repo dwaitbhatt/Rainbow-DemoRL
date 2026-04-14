@@ -30,7 +30,7 @@ class Args:
     algorithm: Annotated[str, 
                 tyro.conf.arg(
                     name="algorithm", 
-                    help="Algorithm to use (TD3, SAC, CQL, CALQL, BC_DET, BC_GAUSS, ACT, ACT_TD3, IBRL_TD3, IBRL_SAC, CHEQ_TD3, CHEQ_SAC, RESRL_TD3, RESRL_SAC)",
+                    help="Algorithm to use (TD3, SAC, CQL, CALQL, BC_DET, BC_GAUSS, IBRL_TD3, IBRL_SAC, CHEQ_TD3, CHEQ_SAC, RESRL_TD3, RESRL_SAC)",
                     aliases=["-a"]
                     )] = "SAC"
     robot: Annotated[str, 
@@ -65,7 +65,7 @@ class Args:
     """the wandb's project name"""
     wandb_entity: str = "ucsd_erl"
     """the entity (team) of wandb's project"""
-    wandb_group: str = "rainbow-demorl"
+    wandb_group: str = "real-rl-finetuning"
     """the group of the run for wandb"""
     log_freq: int = 1_000
     """logging frequency in terms of environment steps"""
@@ -98,12 +98,12 @@ class Args:
                     name="env_id", 
                     help="Environment ID (e.g., PickCube-v1)",
                     aliases=["-e"]
-                    )] = "PickCube-v1"
+                    )] = "PickCubeCustomNoGrasp-v1"
     env_vectorization: str = "gpu"
     """the type of environment vectorization to use"""
-    num_envs: int = 16
+    num_envs: int = 1
     """the number of parallel environments"""
-    num_eval_envs: int = 12
+    num_eval_envs: int = 1
     """the number of parallel evaluation environments"""
     partial_reset: bool = False
     """whether to let parallel environments reset upon termination instead of truncation"""
@@ -147,7 +147,7 @@ class Args:
     """the learning rate of the policy network optimizer"""
     policy_frequency: int = 1
     """the frequency of training policy (delayed for TD3)"""
-    training_freq: int = 64
+    training_freq: int = 1
     """training frequency (in steps)"""
     utd: float = 1
     """update to data ratio"""
@@ -175,7 +175,7 @@ class Args:
     # Finetuning pretrained offline models parameters
     #########################################################
     pretrained_offline_policy_type: Optional[str] = None
-    """the type of pretrained offline policy. Can be 'BC_GAUSS' or 'BC_DET' or 'CQL_H' or 'CQL_RHO' or 'CALQL' or 'ACT'"""
+    """the type of pretrained offline policy. Can be 'BC_GAUSS' or 'BC_DET' or 'CQL_H' or 'CQL_RHO' or 'CALQL'"""
     pretrained_offline_policy_path: Optional[str] = None
     """the path to the pretrained offline policy. If None, will use the default path as per pretrained_offline_policy_type."""
     pretrained_offline_value_type: Optional[str] = None
@@ -216,7 +216,7 @@ class Args:
     # Control prior parameters
     #########################################################
     control_prior_type: Optional[str] = None
-    """the type of control prior to use. Can be 'BC_GAUSS' or 'BC_DET' or 'ACT'"""
+    """the type of control prior to use. Can be 'BC_GAUSS' or 'BC_DET'"""
     control_prior_path: Optional[str] = None
     """the path to the control prior model checkpoint. If None, will use the default path as per control_prior_type."""
     

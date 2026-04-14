@@ -47,9 +47,8 @@ class TrajReplayBuffer:
     Uses CUDA memory if available, and CPU memory otherwise.
     """
 
-    def __init__(self, args: Args, buffer_size: int, horizon: int, device: Optional[torch.device] = None):
+    def __init__(self, args: Args, buffer_size: int, horizon: Optional[int] = None, device: Optional[torch.device] = None):
         self.args = args
-        # training device to which sampled batches will be moved
         if device is None:
             self._device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         else:
@@ -62,7 +61,7 @@ class TrajReplayBuffer:
             truncated_key=None,
             strict_length=True,
         )
-        self.horizon = horizon
+        self.horizon = horizon if horizon is not None else args.horizon
         self._batch_size = args.batch_size * (self.horizon+1)
         self._num_eps = 0
         self._discount_matrix_cache = {}

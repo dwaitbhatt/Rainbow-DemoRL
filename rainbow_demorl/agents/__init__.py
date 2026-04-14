@@ -14,6 +14,8 @@ from .residual_rl import SACBaseResidualRLAgent, TD3BaseResidualRLAgent
 
 from .parl import PARL_TD3Agent, PARL_SACAgent, PARL_ACTAgent
 
+from .monte_carlo_q_real import MonteCarloQAgentReal
+
 __all__ = ["BaseAgent", 
            "ACT_BCAgent", "ACT_TD3Agent", "ACT_ControlPrior",
            "BCDeterministicAgent", "BCGaussianAgent",
@@ -22,4 +24,5 @@ __all__ = ["BaseAgent",
            "SACBaseIBRLAgent", "TD3BaseIBRLAgent",
            "SACBaseCHEQAgent", "TD3BaseCHEQAgent",
            "SACBaseResidualRLAgent", "TD3BaseResidualRLAgent",
-           "PARL_TD3Agent", "PARL_SACAgent", "PARL_ACTAgent"]
+           "PARL_TD3Agent", "PARL_SACAgent", "PARL_ACTAgent",
+           "MonteCarloQAgentReal"]
