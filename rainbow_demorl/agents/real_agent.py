@@ -7,7 +7,7 @@ from mani_skill.agents.base_real_agent import BaseRealAgent
 from mani_skill.sensors.base_sensor import BaseSensorConfig
 from mani_skill.utils.structs.types import Array
 
-from devices.xarm6 import XArmControl
+from devices.xarm6 import XArmControl, CollisionError
 from devices.camera import Camera, load_extrinsics
 from rainbow_demorl.utils.common import Args
 
@@ -123,7 +123,12 @@ class RealXarm6Agent(BaseRealAgent):
         # assert len(qvel) == 7, f"Must pass 7 dim qvel, got {len(qvel)}"
         joint_vel = qvel[:6]
 
-        self.xarm.set_joint_velocity(joint_vel, duration=0.05)
+        try:
+            self.xarm.set_joint_velocity(joint_vel, duration=0.05)
+        except CollisionError as e:
+            # Collision detected during velocity control
+            print(f"Collision detected in set_target_qvel: {e}")
+            raise
         # NOTE: Never set gripper position with qvel, it is always set with set_target_qpos by maniskill
         # Doing this might lead to "undoing" the gripper set_target_qpos 
         # self.xarm.set_gripper_pos(gripper_action)

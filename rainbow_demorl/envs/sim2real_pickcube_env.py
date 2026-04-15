@@ -7,6 +7,7 @@ from mani_skill.vector.wrappers.gymnasium import ManiSkillVectorEnv
 from mani_skill.utils.structs.pose import Pose
 
 from rainbow_demorl.agents.real_agent import RealXarm6Agent
+from devices.xarm6 import CollisionError, SafetyBoundaryError
 
 
 class PickCubeSim2RealEnv(Sim2RealEnv):
@@ -194,18 +195,54 @@ class PickCubeSim2RealEnv(Sim2RealEnv):
         self.agent.controller.reset()
         return ret
 
+    def _create_error_return(self):
+        """
+        Create a return structure for collision scenario when step execution fails.
+        Creates minimal structure with terminations=True and collision info added.
+
+        Returns:
+            Tuple of (obs, rewards, terminations, truncations, infos) with terminations=True and collision info
+        """
+        try:
+            obs = self.get_obs()
+            num_envs = obs.shape[0] if hasattr(obs, "shape") else 1
+        except Exception:
+            num_envs = 1
+            obs = torch.zeros((num_envs, 30), dtype=torch.float32, device=self.device)
+
+        rewards = torch.zeros(num_envs, dtype=torch.float32, device=self.device)
+        terminations = torch.ones(num_envs, dtype=torch.bool, device=self.device)
+        truncations = torch.zeros(num_envs, dtype=torch.bool, device=self.device)
+
+        infos = {
+            "collision": True,
+            "episode": {
+                "collision": torch.ones(num_envs, dtype=torch.float32, device=self.device)
+            },
+        }
+
+        return (obs, rewards, terminations, truncations, infos)
+
     def step(self, action):
         """
         In order to make users able to use most gym environment wrappers without having to write extra code for the real environment
         we temporarily swap the last wrapper's .env property with the RealEnvStepReset environment that has the real step/reset functions
         """
-        if self._handle_wrappers:
-            orig_env = self._last_wrapper.env
-            self._last_wrapper.env = self._env_with_real_step_reset
-            ret = self._first_wrapper.step(action)
-            self._last_wrapper.env = orig_env
-        else:
-            ret = self._env_with_real_step_reset.step(action)
+        ret = None
+
+        try:
+            if self._handle_wrappers:
+                orig_env = self._last_wrapper.env
+                self._last_wrapper.env = self._env_with_real_step_reset
+                ret = self._first_wrapper.step(action)
+                self._last_wrapper.env = orig_env
+            else:
+                ret = self._env_with_real_step_reset.step(action)
+        except (CollisionError, SafetyBoundaryError) as e:
+            print(f"Critical error detected via exception: {e}")
+            self.agent.xarm.recover_from_error()
+            ret = self._create_error_return()
+
         # ensure sim agent qpos is synced
         if hasattr(self.base_sim_env.agent, "set_qpos"):
             self.base_sim_env.agent.set_qpos(self.agent.robot.qpos)
